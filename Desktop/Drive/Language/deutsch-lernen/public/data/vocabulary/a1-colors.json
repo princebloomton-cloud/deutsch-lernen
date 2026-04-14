@@ -1,0 +1,18 @@
+{
+  "category": "Colors",
+  "level": "A1",
+  "words": [
+    { "id": "col-001", "german": "rot", "english": "red", "article": null, "exampleDE": "Das Auto ist rot.", "exampleEN": "The car is red.", "difficulty": 1 },
+    { "id": "col-002", "german": "blau", "english": "blue", "article": null, "exampleDE": "Der Himmel ist blau.", "exampleEN": "The sky is blue.", "difficulty": 1 },
+    { "id": "col-003", "german": "grün", "english": "green", "article": null, "exampleDE": "Das Gras ist grün.", "exampleEN": "The grass is green.", "difficulty": 1 },
+    { "id": "col-004", "german": "gelb", "english": "yellow", "article": null, "exampleDE": "Die Sonne ist gelb.", "exampleEN": "The sun is yellow.", "difficulty": 1 },
+    { "id": "col-005", "german": "schwarz", "english": "black", "article": null, "exampleDE": "Die Katze ist schwarz.", "exampleEN": "The cat is black.", "difficulty": 1 },
+    { "id": "col-006", "german": "weiß", "english": "white", "article": null, "exampleDE": "Der Schnee ist weiß.", "exampleEN": "The snow is white.", "difficulty": 1 },
+    { "id": "col-007", "german": "orange", "english": "orange", "article": null, "exampleDE": "Die Orange ist orange.", "exampleEN": "The orange is orange.", "difficulty": 1 },
+    { "id": "col-008", "german": "lila", "english": "purple", "article": null, "exampleDE": "Die Blume ist lila.", "exampleEN": "The flower is purple.", "difficulty": 1 },
+    { "id": "col-009", "german": "rosa", "english": "pink", "article": null, "exampleDE": "Ihr Kleid ist rosa.", "exampleEN": "Her dress is pink.", "difficulty": 1 },
+    { "id": "col-010", "german": "braun", "english": "brown", "article": null, "exampleDE": "Der Hund ist braun.", "exampleEN": "The dog is brown.", "difficulty": 1 },
+    { "id": "col-011", "german": "grau", "english": "gray", "article": null, "exampleDE": "Der Elefant ist grau.", "exampleEN": "The elephant is gray.", "difficulty": 1 },
+    { "id": "col-012", "german": "gold", "english": "gold", "article": null, "exampleDE": "Der Ring ist gold.", "exampleEN": "The ring is gold.", "difficulty": 2 }
+  ]
+}

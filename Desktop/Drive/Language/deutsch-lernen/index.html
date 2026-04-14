@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deutsch Lernen — Learn German</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🇩🇪 Deutsch<span>Lernen</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Topics</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="App.toggleTheme()" title="Toggle dark mode">🌙</button>
+        <button class="nav-hamburger">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="page-header">
+      <h1>Learn German</h1>
+      <p>Pick a topic to start studying with flashcards and quizzes</p>
+    </div>
+
+    <!-- Streak Banner -->
+    <div id="streak-banner" style="text-align:center; margin-bottom:1.5rem; display:none;">
+      <span style="background:rgba(201,168,76,0.15); color:var(--accent); padding:0.4rem 1rem; border-radius:100px; font-weight:600; font-size:0.9rem;">
+        🔥 <span id="streak-count">0</span> day streak — keep it going!
+      </span>
+    </div>
+
+    <!-- A1 Section -->
+    <h2 style="margin-bottom:1rem; font-size:1.2rem;">
+      <span class="badge badge-a1">A1</span> Beginner
+    </h2>
+    <div class="topic-grid" style="margin-bottom:2.5rem;">
+
+      <div class="topic-card">
+        <div class="card-icon">👋</div>
+        <h3>Greetings</h3>
+        <p class="text-light" style="font-size:0.85rem;">Hallo, Guten Tag, Tschüss — essential first words</p>
+        <div class="card-meta">
+          <span>15 words</span>
+          <span id="greetings-progress"></span>
+        </div>
+        <div class="flex gap-1 mt-1">
+          <a href="flashcards.html?category=a1-greetings" class="btn btn-primary btn-sm" style="flex:1;">Flashcards</a>
+          <a href="quiz.html?category=a1-greetings" class="btn btn-outline btn-sm" style="flex:1;">Quiz</a>
+        </div>
+      </div>
+
+      <div class="topic-card">
+        <div class="card-icon">🔢</div>
+        <h3>Numbers</h3>
+        <p class="text-light" style="font-size:0.85rem;">Eins, zwei, drei — count from 1 to 20</p>
+        <div class="card-meta">
+          <span>20 words</span>
+          <span id="numbers-progress"></span>
+        </div>
+        <div class="flex gap-1 mt-1">
+          <a href="flashcards.html?category=a1-numbers" class="btn btn-primary btn-sm" style="flex:1;">Flashcards</a>
+          <a href="quiz.html?category=a1-numbers" class="btn btn-outline btn-sm" style="flex:1;">Quiz</a>
+        </div>
+      </div>
+
+      <div class="topic-card">
+        <div class="card-icon">🎨</div>
+        <h3>Colors</h3>
+        <p class="text-light" style="font-size:0.85rem;">Rot, blau, grün — learn all the colors</p>
+        <div class="card-meta">
+          <span>12 words</span>
+          <span id="colors-progress"></span>
+        </div>
+        <div class="flex gap-1 mt-1">
+          <a href="flashcards.html?category=a1-colors" class="btn btn-primary btn-sm" style="flex:1;">Flashcards</a>
+          <a href="quiz.html?category=a1-colors" class="btn btn-outline btn-sm" style="flex:1;">Quiz</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Coming Soon -->
+    <h2 style="margin-bottom:1rem; font-size:1.2rem;">
+      <span class="badge badge-a2">A2</span> Elementary — Coming Soon
+    </h2>
+    <div class="topic-grid">
+      <div class="topic-card" style="opacity:0.5; pointer-events:none;">
+        <div class="card-icon">🍕</div>
+        <h3>Food & Drink</h3>
+        <p class="text-light" style="font-size:0.85rem;">Brot, Kaffee, Wasser — ordering and groceries</p>
+        <div class="card-meta"><span>Coming soon</span></div>
+      </div>
+      <div class="topic-card" style="opacity:0.5; pointer-events:none;">
+        <div class="card-icon">👨‍👩‍👧‍👦</div>
+        <h3>Family</h3>
+        <p class="text-light" style="font-size:0.85rem;">Mutter, Vater, Bruder — family members</p>
+        <div class="card-meta"><span>Coming soon</span></div>
+      </div>
+      <div class="topic-card" style="opacity:0.5; pointer-events:none;">
+        <div class="card-icon">📅</div>
+        <h3>Days & Months</h3>
+        <p class="text-light" style="font-size:0.85rem;">Montag, Januar — time and dates</p>
+        <div class="card-meta"><span>Coming soon</span></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/progress.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Show streak if active
+    const streak = Progress.getStreak();
+    if (streak > 0) {
+      document.getElementById('streak-banner').style.display = 'block';
+      document.getElementById('streak-count').textContent = streak;
+    }
+  </script>
+</body>
+</html>

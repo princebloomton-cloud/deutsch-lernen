@@ -1,0 +1,26 @@
+{
+  "category": "Numbers",
+  "level": "A1",
+  "words": [
+    { "id": "num-001", "german": "null", "english": "zero", "article": null, "exampleDE": "Die Temperatur ist null Grad.", "exampleEN": "The temperature is zero degrees.", "difficulty": 1 },
+    { "id": "num-002", "german": "eins", "english": "one", "article": null, "exampleDE": "Ich habe eins.", "exampleEN": "I have one.", "difficulty": 1 },
+    { "id": "num-003", "german": "zwei", "english": "two", "article": null, "exampleDE": "Zwei Kaffee, bitte.", "exampleEN": "Two coffees, please.", "difficulty": 1 },
+    { "id": "num-004", "german": "drei", "english": "three", "article": null, "exampleDE": "Ich habe drei Kinder.", "exampleEN": "I have three children.", "difficulty": 1 },
+    { "id": "num-005", "german": "vier", "english": "four", "article": null, "exampleDE": "Der Tisch hat vier Beine.", "exampleEN": "The table has four legs.", "difficulty": 1 },
+    { "id": "num-006", "german": "fünf", "english": "five", "article": null, "exampleDE": "Es ist fünf Uhr.", "exampleEN": "It is five o'clock.", "difficulty": 1 },
+    { "id": "num-007", "german": "sechs", "english": "six", "article": null, "exampleDE": "Wir brauchen sechs Stühle.", "exampleEN": "We need six chairs.", "difficulty": 1 },
+    { "id": "num-008", "german": "sieben", "english": "seven", "article": null, "exampleDE": "Eine Woche hat sieben Tage.", "exampleEN": "A week has seven days.", "difficulty": 1 },
+    { "id": "num-009", "german": "acht", "english": "eight", "article": null, "exampleDE": "Das Konzert beginnt um acht.", "exampleEN": "The concert starts at eight.", "difficulty": 1 },
+    { "id": "num-010", "german": "neun", "english": "nine", "article": null, "exampleDE": "Ich wohne in Nummer neun.", "exampleEN": "I live at number nine.", "difficulty": 1 },
+    { "id": "num-011", "german": "zehn", "english": "ten", "article": null, "exampleDE": "Das kostet zehn Euro.", "exampleEN": "That costs ten euros.", "difficulty": 1 },
+    { "id": "num-012", "german": "elf", "english": "eleven", "article": null, "exampleDE": "Es ist elf Uhr nachts.", "exampleEN": "It is eleven o'clock at night.", "difficulty": 1 },
+    { "id": "num-013", "german": "zwölf", "english": "twelve", "article": null, "exampleDE": "Ein Jahr hat zwölf Monate.", "exampleEN": "A year has twelve months.", "difficulty": 1 },
+    { "id": "num-014", "german": "dreizehn", "english": "thirteen", "article": null, "exampleDE": "Er ist dreizehn Jahre alt.", "exampleEN": "He is thirteen years old.", "difficulty": 2 },
+    { "id": "num-015", "german": "vierzehn", "english": "fourteen", "article": null, "exampleDE": "In vierzehn Tagen ist Urlaub.", "exampleEN": "In fourteen days is vacation.", "difficulty": 2 },
+    { "id": "num-016", "german": "fünfzehn", "english": "fifteen", "article": null, "exampleDE": "Der Bus kommt in fünfzehn Minuten.", "exampleEN": "The bus comes in fifteen minutes.", "difficulty": 2 },
+    { "id": "num-017", "german": "sechzehn", "english": "sixteen", "article": null, "exampleDE": "Sie ist sechzehn Jahre alt.", "exampleEN": "She is sixteen years old.", "difficulty": 2 },
+    { "id": "num-018", "german": "siebzehn", "english": "seventeen", "article": null, "exampleDE": "Kapitel siebzehn ist interessant.", "exampleEN": "Chapter seventeen is interesting.", "difficulty": 2 },
+    { "id": "num-019", "german": "achtzehn", "english": "eighteen", "article": null, "exampleDE": "Mit achtzehn darf man wählen.", "exampleEN": "At eighteen you may vote.", "difficulty": 2 },
+    { "id": "num-020", "german": "zwanzig", "english": "twenty", "article": null, "exampleDE": "Ich brauche zwanzig Minuten.", "exampleEN": "I need twenty minutes.", "difficulty": 2 }
+  ]
+}

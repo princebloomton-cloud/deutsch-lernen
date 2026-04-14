@@ -1,0 +1,141 @@
+{
+  "category": "Greetings",
+  "level": "A1",
+  "words": [
+    {
+      "id": "greet-001",
+      "german": "Hallo",
+      "english": "Hello",
+      "article": null,
+      "exampleDE": "Hallo, wie geht es dir?",
+      "exampleEN": "Hello, how are you?",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-002",
+      "german": "Guten Morgen",
+      "english": "Good morning",
+      "article": null,
+      "exampleDE": "Guten Morgen! Haben Sie gut geschlafen?",
+      "exampleEN": "Good morning! Did you sleep well?",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-003",
+      "german": "Guten Tag",
+      "english": "Good day",
+      "article": null,
+      "exampleDE": "Guten Tag, mein Name ist Anna.",
+      "exampleEN": "Good day, my name is Anna.",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-004",
+      "german": "Guten Abend",
+      "english": "Good evening",
+      "article": null,
+      "exampleDE": "Guten Abend, willkommen im Restaurant.",
+      "exampleEN": "Good evening, welcome to the restaurant.",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-005",
+      "german": "Gute Nacht",
+      "english": "Good night",
+      "article": null,
+      "exampleDE": "Gute Nacht, schlaf gut!",
+      "exampleEN": "Good night, sleep well!",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-006",
+      "german": "Tschüss",
+      "english": "Bye",
+      "article": null,
+      "exampleDE": "Tschüss, bis morgen!",
+      "exampleEN": "Bye, see you tomorrow!",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-007",
+      "german": "Auf Wiedersehen",
+      "english": "Goodbye",
+      "article": null,
+      "exampleDE": "Auf Wiedersehen, es war schön!",
+      "exampleEN": "Goodbye, it was nice!",
+      "difficulty": 2
+    },
+    {
+      "id": "greet-008",
+      "german": "Wie geht es Ihnen?",
+      "english": "How are you? (formal)",
+      "article": null,
+      "exampleDE": "Guten Tag, wie geht es Ihnen?",
+      "exampleEN": "Good day, how are you?",
+      "difficulty": 2
+    },
+    {
+      "id": "greet-009",
+      "german": "Wie geht's?",
+      "english": "How's it going?",
+      "article": null,
+      "exampleDE": "Hey, wie geht's?",
+      "exampleEN": "Hey, how's it going?",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-010",
+      "german": "Danke",
+      "english": "Thank you",
+      "article": null,
+      "exampleDE": "Danke, das ist sehr nett!",
+      "exampleEN": "Thank you, that is very nice!",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-011",
+      "german": "Bitte",
+      "english": "Please / You're welcome",
+      "article": null,
+      "exampleDE": "Bitte, nehmen Sie Platz.",
+      "exampleEN": "Please, have a seat.",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-012",
+      "german": "Entschuldigung",
+      "english": "Excuse me / Sorry",
+      "article": null,
+      "exampleDE": "Entschuldigung, wo ist der Bahnhof?",
+      "exampleEN": "Excuse me, where is the train station?",
+      "difficulty": 2
+    },
+    {
+      "id": "greet-013",
+      "german": "Ja",
+      "english": "Yes",
+      "article": null,
+      "exampleDE": "Ja, das stimmt.",
+      "exampleEN": "Yes, that's right.",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-014",
+      "german": "Nein",
+      "english": "No",
+      "article": null,
+      "exampleDE": "Nein, danke.",
+      "exampleEN": "No, thank you.",
+      "difficulty": 1
+    },
+    {
+      "id": "greet-015",
+      "german": "Bis bald",
+      "english": "See you soon",
+      "article": null,
+      "exampleDE": "Bis bald, mach's gut!",
+      "exampleEN": "See you soon, take care!",
+      "difficulty": 2
+    }
+  ]
+}

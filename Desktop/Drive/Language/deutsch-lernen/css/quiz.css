@@ -1,0 +1,187 @@
+/* ============================================
+   Quiz Styles
+   ============================================ */
+
+.quiz-area {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Question Header */
+.quiz-header {
+  text-align: center;
+}
+
+.quiz-header .question-count {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Question Card */
+.question-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: center;
+}
+
+.question-card .prompt {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.question-card .german-word {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+/* Answer Options */
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.answer-btn {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  transition: all var(--transition);
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.answer-btn:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: rgba(13, 110, 110, 0.04);
+}
+
+.answer-btn .option-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Answer States */
+.answer-btn.correct {
+  border-color: var(--success);
+  background: rgba(40, 167, 69, 0.08);
+}
+
+.answer-btn.correct .option-letter {
+  background: var(--success);
+  color: #fff;
+}
+
+.answer-btn.wrong {
+  border-color: var(--danger);
+  background: rgba(220, 53, 69, 0.08);
+}
+
+.answer-btn.wrong .option-letter {
+  background: var(--danger);
+  color: #fff;
+}
+
+.answer-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+/* Feedback */
+.quiz-feedback {
+  text-align: center;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  display: none;
+}
+
+.quiz-feedback.show {
+  display: block;
+}
+
+.quiz-feedback.correct {
+  background: rgba(40, 167, 69, 0.1);
+  color: var(--success);
+}
+
+.quiz-feedback.wrong {
+  background: rgba(220, 53, 69, 0.1);
+  color: var(--danger);
+}
+
+/* Results Screen */
+.quiz-results {
+  text-align: center;
+  padding: 2.5rem;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.quiz-results .score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.quiz-results h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-results p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.quiz-results .btn-group {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .question-card {
+    padding: 1.5rem;
+  }
+
+  .question-card .german-word {
+    font-size: 1.6rem;
+  }
+}

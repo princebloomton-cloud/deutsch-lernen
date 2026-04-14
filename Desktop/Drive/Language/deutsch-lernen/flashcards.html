@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards — Deutsch Lernen</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flashcard.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🇩🇪 Deutsch<span>Lernen</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Topics</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="App.toggleTheme()">🌙</button>
+        <button class="nav-hamburger">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="page-header">
+      <h1>Flashcards</h1>
+      <span class="badge badge-a1">A1</span>
+      <div class="progress-bar-container" style="max-width:400px; margin:0.75rem auto 0;">
+        <div class="progress-bar-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div class="flashcard-area">
+
+      <!-- Leitner Box Indicator -->
+      <div class="box-indicator">
+        <div class="box-dot" title="Box 1"></div>
+        <div class="box-dot" title="Box 2"></div>
+        <div class="box-dot" title="Box 3"></div>
+        <div class="box-dot" title="Box 4"></div>
+        <div class="box-dot" title="Box 5"></div>
+      </div>
+
+      <!-- Flashcard -->
+      <div class="card-wrapper">
+        <div class="flashcard">
+          <div class="card-face card-front">
+            <button class="speak-btn speak-front" title="Listen">🔊</button>
+            <span class="article"></span>
+            <span class="word">Loading...</span>
+            <span class="example"></span>
+            <span class="hint">Tap to reveal</span>
+          </div>
+          <div class="card-face card-back">
+            <span class="word">—</span>
+            <span class="example"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Counter -->
+      <span class="card-counter">0 / 0</span>
+
+      <!-- Rating Buttons (shown after flip) -->
+      <div class="rating-buttons">
+        <button class="btn btn-forgot btn-sm">Don't Know</button>
+        <button class="btn btn-hard btn-sm">Hard</button>
+        <button class="btn btn-easy btn-sm">Easy</button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="card-nav">
+        <button class="btn btn-outline btn-sm btn-prev">← Previous</button>
+        <button class="btn btn-outline btn-sm btn-next">Next →</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/progress.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/flashcard.js"></script>
+</body>
+</html>

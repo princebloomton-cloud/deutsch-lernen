@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress — Deutsch Lernen</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .stat-card .stat-value {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+    }
+    .stat-card .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 0.25rem;
+    }
+    .stat-card.accent .stat-value { color: var(--accent); }
+    .stat-card.success .stat-value { color: var(--success); }
+    .reset-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🇩🇪 Deutsch<span>Lernen</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Topics</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="App.toggleTheme()">🌙</button>
+        <button class="nav-hamburger">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="page-header">
+      <h1>Your Progress</h1>
+      <p>Track your German learning journey</p>
+    </div>
+
+    <div class="stats-grid" id="stats-grid">
+      <!-- Filled by JS -->
+    </div>
+
+    <div class="reset-section">
+      <p class="text-light" style="margin-bottom:0.75rem; font-size:0.85rem;">Want to start fresh?</p>
+      <button class="btn btn-danger btn-sm" onclick="resetProgress()">Reset All Progress</button>
+    </div>
+  </main>
+
+  <script src="js/progress.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    function renderStats() {
+      const stats = Progress.getStats();
+      const grid = document.getElementById('stats-grid');
+      grid.innerHTML = `
+        <div class="stat-card">
+          <span class="stat-value">${stats.streak}</span>
+          <span class="stat-label">🔥 Day Streak</span>
+        </div>
+        <div class="stat-card success">
+          <span class="stat-value">${stats.mastered}</span>
+          <span class="stat-label">Words Mastered</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">${stats.learning}</span>
+          <span class="stat-label">Currently Learning</span>
+        </div>
+        <div class="stat-card accent">
+          <span class="stat-value">${stats.accuracy}%</span>
+          <span class="stat-label">Accuracy</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">${stats.totalWords}</span>
+          <span class="stat-label">Words Studied</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">${stats.quizzesTaken}</span>
+          <span class="stat-label">Quizzes Taken</span>
+        </div>
+      `;
+    }
+
+    function resetProgress() {
+      if (confirm('Are you sure? This will erase all your progress.')) {
+        Progress.resetAll();
+        renderStats();
+      }
+    }
+
+    renderStats();
+  </script>
+</body>
+</html>
