@@ -1,21 +1,19 @@
-FROM node:20-alpine
+FROM node:20-slim
 
 WORKDIR /app
 
-# Copy everything
+COPY package.json ./
+
+RUN npm install --legacy-peer-deps --no-audit --no-fund
+
 COPY . .
 
-# Install dependencies
-RUN npm install
+RUN rm -rf node_modules/.cache
 
-# Build the Next.js app
 RUN npm run build
 
-# Expose port
 EXPOSE 3000
-
 ENV PORT=3000
-ENV HOSTNAME="0.0.0.0"
+ENV HOSTNAME=0.0.0.0
 
-# Start the app
 CMD ["npm", "start"]
